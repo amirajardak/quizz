@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Formulaire de Dépistage de la Dépression</title>
+  </head>
+  <body>
+        <div class="form-container">
+          <h1>Formulaire de Dépistage de la Dépression</h1>
+  
+          <form action="quizz.html" method="post">
+  
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required>
+  
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" name="prenom" required>
+  
+              <label for="age">Âge :</label>
+              <input type="number" id="age" name="age" required>
+  
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="symptomes">Décrivez brièvement vos symptômes :</label>
+              <textarea id="symptomes" name="symptomes" rows="4" required></textarea>
+  
+              <label for="traitement">Avez-vous actuellement un traitement pour la dépression?</label>
+              <select id="traitement" name="traitement" required>
+                  <option value="oui">Oui</option>
+                  <option value="non">Non</option>
+              </select>
+              <input type="submit" value="Envoyer le Formulaire">
+          </form>
+      </div>
+      <script src="script.js"></script>
+  </body>
+  </html>
